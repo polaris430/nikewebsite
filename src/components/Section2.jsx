@@ -5,7 +5,7 @@ function Section2() {
         <div className="sec2leftitem">
           <div className="sec2logo">
             <img
-              src="./src/assets/nikelogo.png"
+              src="public/assets/nikelogo.png"
               className="sec2logoimage"
             ></img>
           </div>
@@ -40,10 +40,10 @@ function Section2() {
           </div>
         </div>
         <div className="sec2rightitem">
-          <img src="./src/assets/search.png" className="searchicon"></img>
+          <img src="public/assets/search.png" className="searchicon"></img>
           <input className="searchinput" placeholder="search"></input>
-          <img src="./src/assets/favourite.png" className="favicon"></img>
-          <img src="./src/assets/cart.png" className="carticon"></img>
+          <img src="public/assets/favourite.png" className="favicon"></img>
+          <img src="public/assets/cart.png" className="carticon"></img>
         </div>
       </div>
     </div>

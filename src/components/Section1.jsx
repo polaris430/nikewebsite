@@ -3,7 +3,7 @@ function Section1() {
     <div className="sec1container">
       <div className="sec1items">
         <div className="sec1left">
-          <img src="./src/assets/jordan.png" className="sec1logoimage"></img>
+          <img src="public/assets/jordan.png" className="sec1logoimage"></img>
         </div>
         <div className="sec1items">
           <ul className="sec1right">
