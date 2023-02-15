@@ -5,7 +5,7 @@ function Section4() {
           <img src="./src/assets/nlogo.png" className="sec4logoimg"></img>
         </div> */}
       <div className="sec4image">
-        <img src="public/assets/airmax.jpg" className="sec4img"></img>
+        <img src="assets/airmax.jpg" className="sec4img"></img>
       </div>
     </div>
   );
