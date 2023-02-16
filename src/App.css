@@ -65,129 +65,30 @@
 
 /********************** SECTION 2 **************************/
 
-.sec2container {
-  display: flex;
-  background: white;
-  height: auto;
-}
+/* navigation part in styles jsx inside Nav component */
 
-.sec2 {
-  display: flex;
-  flex: auto;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  align-items: center;
-}
+/* hamburger part */
 
-.sec2leftitem {
-  flex: 0 0 20%;
-}
-
-.sec2middleitem {
-  flex: 0 0 60%;
-}
-
-.sec2rightitem {
-  flex: 0 0 20%;
-}
-
-.sec2ul {
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-}
-
-.sec2ul a {
-  text-decoration: none;
-  color: black;
-}
-
-.sec2ul a:hover {
-  color: dodgerblue;
-}
-
-.sec2menuitem {
-  list-style: none;
-}
-
-.sec2rightitem {
-  display: flex;
-  justify-content: end;
-  gap: 1em;
-}
-
-.searchicon,
-.favicon,
-.carticon {
+.hamburger {
   width: 2rem;
-  height: 2em;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
 }
 
-.searchinput {
-  border-radius: 10px;
-  text-align: center;
-  width: 50%;
-  box-shadow: inset;
-}
-
-/* hamburger menu */
-.hamburgermenu {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.burger {
+  width: 1.5em;
+  height: 0.2rem;
   background-color: black;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transition: all 0.3 linear;
 }
 
-@media (max-width: 700px) {
-  .hamburgermenu {
-    display: block;
-    margin-right: 3em;
-  }
-
-  .hamburgermenu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburgermenu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburgermenu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .favicon {
-    display: none;
-  }
-
-  .sec2ul {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .sec2menuitem {
-    margin: 16px 0;
-  }
-
-  .sec2ul.active {
-    left: 0;
-  }
-
-  .sec2logoimage {
-    margin-right: 1em;
-  }
+.hamburger {
+  display: none;
 }
 
 /********************** SECTION 3 **************************/
